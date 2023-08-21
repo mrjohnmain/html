@@ -1,0 +1,58 @@
+{
+    "name": "mrjohnmain/html",
+    "description": "HTML and Form Builders for the Laravel Framework",
+    "license": "MIT",
+    "homepage": "https://laravelcollective.com",
+    "support": {
+        "issues": "https://github.com/LaravelMrJohnMain/html/issues",
+        "source": "https://github.com/LaravelMrJohnMain/html"
+    },
+    "authors": [
+        {
+            "name": "Adam Engebretson",
+            "email": "adam@laravelcollective.com"
+        },
+        {
+            "name": "Taylor Otwell",
+            "email": "taylorotwell@gmail.com"
+        },
+        {
+            "name": "John Main",
+            "email": "john@johnmain.co.uk"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "illuminate/http": "^9.0|^10.0",
+        "illuminate/routing": "^9.0|^10.0",
+        "illuminate/session": "^9.0|^10.0",
+        "illuminate/support": "^9.0|^10.0",
+        "illuminate/view": "^9.0|^10.0"
+    },
+    "require-dev": {
+        "illuminate/database": "^9.0|^10.0",
+        "mockery/mockery": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "MrJohnMain\\Html\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MrJohnMain\\Html\\HtmlServiceProvider"
+            ],
+            "aliases": {
+                "Form": "MrJohnMain\\Html\\FormFacade",
+                "Html": "MrJohnMain\\Html\\HtmlFacade"
+            }
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
